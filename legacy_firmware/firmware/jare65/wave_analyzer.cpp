@@ -264,7 +264,9 @@ void WaveAnalyzer::perform_welch_analysis_imu_data(void){
 
   // push at the end the last fix
   // this is where the conditions can be enforced to push to the buffer or not
-  wave_packet_buffer.push_back(working_wave_packet);
+  if (working_wave_packet.Hs > 0.01){
+    wave_packet_buffer.push_back(working_wave_packet);
+    }
 
   Serial.println(F("analysis success!"));
 }
