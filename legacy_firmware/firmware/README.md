@@ -1,3 +1,11 @@
+# Overview of this branch by Tak
+## notes
+This is the branch for jare firmware. 
+changes from jare64 --> jare65 is reducing message size to 3 units, and the conditional push only if hs>1cm. 
+changes I am working on is jareow, in which we wish to capture/resolve high frequency energy without costing too much Iridium cost. We will see. 
+
+
+## from the OpenMetBuoy repo
 A disclaimer first:
 
 - these firmwares work well, but they are messy; I have had very little time to improve code quality / re-factor, so things have grown up "as things went", features were added continuously, and the firmware was developed as an experiment rather than a well engineered piece of software
