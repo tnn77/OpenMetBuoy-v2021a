@@ -51,6 +51,9 @@ struct Wave_Packet{
     uint16_t array_pwelch[welch_bin_max - welch_bin_min];
 };
 
+// this is where to insert distributed freq bins
+// Wave_Packet_compressed{}
+
 void print_wave_packet(Wave_Packet const & packet);
 
 class WaveAnalyzer{
