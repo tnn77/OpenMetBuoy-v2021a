@@ -1,3 +1,12 @@
+# overview of this branch by Tak
+## notes
+this branch is used for testing firmware like fast Iridium test mode and changing frequency bins.
+At the moment, change freq\_bins also has push to buffer or not in L266 wave\_analyzer.cpp.
+changing frequency bins can be done by making a function at L54 wave\_analyzer.h
+
+
+## from the OpenMetBuoy repo
+
 A disclaimer first:
 
 - these firmwares work well, but they are messy; I have had very little time to improve code quality / re-factor, so things have grown up "as things went", features were added continuously, and the firmware was developed as an experiment rather than a well engineered piece of software
