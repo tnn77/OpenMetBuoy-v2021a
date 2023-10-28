@@ -263,10 +263,11 @@ void WaveAnalyzer::perform_welch_analysis_imu_data(void){
   }
 
   // push at the end the last fix
-  // this is where the conditions can be enforced to push to the buffer or not
+  // to save on Iridium cost, only push data to the buffer if there is signal
+  // the idea suggested by T. Kodaira.
   if (working_wave_packet.Hs > 0.01){
     wave_packet_buffer.push_back(working_wave_packet);
-    }
+  }
 
   Serial.println(F("analysis success!"));
 }
